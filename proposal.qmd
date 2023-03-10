@@ -30,9 +30,9 @@ Did students who attend public schools experience different types of housing ins
 
 -   A description of the research topic along with a concise statement of your hypotheses on this topic.
 
-My hypothesis is that students who attended a public school during the 2020-21 school year had a higher likelihood of experiencing housing instability than their privately-educated peers.
+Our hypothesis is that students who attended a public school during the 2020-21 school year had a higher likelihood of experiencing housing instability than their privately-educated peers.
 
-I also hypothesize that students who are educated at private schools were more likely to experience doubling up housing insecurity rather than living in shelters. On the other hand, I hypothesize that students educated at public schools experienced living in shelters as a a form of housing instability at a higher rate than those who were educated in private schools.
+We also hypothesize that students who are educated at private schools were more likely to experience doubling up housing insecurity rather than living in shelters. On the other hand, I hypothesize that students educated at public schools experienced living in shelters as a a form of housing instability at a higher rate than those who were educated in private schools.
 
 There are both quantitative and categorical variables in my research question:
 
@@ -109,13 +109,13 @@ Each observation is based on an airport code (shorthand for the airport's full n
 
 ## Research question
 
--   A well formulated research question. (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)
+At what times of year are there the most flight delays and cancelations, and what is the most common type of reasoning for delays and cancellations at these times?
 
-1: relationship between flight delays and time of the year
+Flight delays and cancellations often give passengers grief and stress at all different times of the year. However, our question explores whether there is a specific time of year when flights are particularly prone to delays and cancellations. In turn, this would help those looking to fly to know how to best plan for trips that might be impacted by flight changes. Working to understand why such issues occur would also be crucial, both in determining whether certain cancellations or delays can be avoided and in providing some perspective to passengers who have struggled with flight plans in the past.
 
--   A description of the research topic along with a concise statement of your hypotheses on this topic.
+Based on the past literature on the times of year flights are subject to the most cancellations and delays, we hypothesize that the time most prone to flight cancellations and delays is during the summer months (June through August).
 
--   Identify the types of variables in your research question. Categorical? Quantitative? The variablres used are categorical and quantitative.
+We are utilizing mostly quantitative variables in this research, which the exception of the month data, airline information, and airport information (categorical). Quantitative variables used will include the number of flights delayed and cancelled for a variety of reasons at different airports across the country.
 
 ## Literature
 

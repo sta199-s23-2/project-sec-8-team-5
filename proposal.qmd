@@ -70,11 +70,13 @@ Each observation is a particular arrest of an adult made starting from October 2
 
 ## Research question
 
--   A well formulated research question. (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)
+Is there a correlation between the race and age of the arrested individual and the type of the arrest that is utilized?
 
--   A description of the research topic along with a concise statement of your hypotheses on this topic.
+Research in the past has been conducted on the impact race has on arrest rates and how there are significant and systemic biases against Black Americans in the criminal justice system. However, this project looks to understand whether there is a correlation between race and the type of arrest. Different types of arrests include warrant-based, on-view, and summoned/cited. Our goal is to determine whether a certain race is more likely to be arrested when a warrant is present or whether a certain race is more likely to be arrested "on-site" (or when a police officer suspects that they had engagement in a criminal act - probable cause for an arrest on-site). We also hope to integrate sex into this question, to examine the how intersectionality may exacerbate biases.
 
--   Identify the types of variables in your research question. Categorical? Quantitative?
+We hypothesize that there would be a correlation between Black men arrested and the fuse of on-site arrests. We also predict that there may be a correlation between White women and the use of warrants to arrest.
+
+For this question, most of the variables will be categorical. We are specifically focusing on three variables in this case, race, sex, and type of arrest, which all serve as categorical variables.
 
 ## Literature
 

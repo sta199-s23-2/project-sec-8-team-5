@@ -18,11 +18,9 @@ library(tidyverse)
 
 [2021 Students In Temporary Housing - Catalog (data.gov)](https://catalog.data.gov/dataset/2021-students-in-temporary-housing)
 
--   Identify the source of the data.
+This data was collected from the Data.Gov Data Catalog. This data set was created on December 11, 2021, and the data was first published on December 6, 2021. The data is sourced from the City of New York. There is not much information concerning the specific method of collecting data; however, the data was collected for the New York City Department of Education, who likely used surveys to find out the relevant information about students who attended New York City district schools from the beginning of the school year to July 2 over the course of the 2020-2021 school year.
 
--   State when and how it was originally collected (by the original data curator, not necessarily how you found the data).
-
--   Write a brief description of the observations.
+Each observation is based on a DBN (District Borough Number) and a school's name. For each observation, there are different variables to identify the number of total students, the percentage of students in temporary housing, the number of students residing in shelter, the number of students residing in a DHS (Department of Homeless Services) shelter, the number of students residing in a non-DHS shelter, and the number of students living in "doubled up" housing, which means that they are living in households with multiple families due to the financial inability to live in their own home.
 
 ## Research question
 
@@ -45,6 +43,7 @@ library(tidyverse)
 ```{r}
 #| label: load-data-1
 
+students_temp_housing <- read_csv("2021_Students_In_Temporary_Housing.csv")
 glimpse(students_temp_housing)
 ```
 

@@ -64,11 +64,9 @@ glimpse(students_temp_housing)
 
 [DPD Arrests (UCR NIBRS Reporting) \| Durham, NC Open Data Portal (arcgis.com)](https://live-durhamnc.opendata.arcgis.com/documents/dpd-arrests-ucr-nibrs-reporting/about)
 
--   Identify the source of the data.
+This data is from the Open Data website for the City and County of Durham. This data set has been updated since its original publication, and it was collected by the Durham Police Department. The data set was first published on June 24, 2022 and was more recently updated on January 27, 2023. This data set is updated annually and begins in October 2018. The department collected this data from the FBI's UCR Program Data Collections for the National Incident-Based Reporting System (NIBRS). The data does not go back before October 2018, as the agency used the Summary Reporting System before that date (the data is not comparable across reporting systems).
 
--   State when and how it was originally collected (by the original data curator, not necessarily how you found the data).
-
--   Write a brief description of the observations.
+Each observation is a particular arrest of an adult made starting from October 2018. For each observation, variables include personal descriptors (race, age, ethnicity, sex, etc.), the reason for their arrest, when they were arrested, and the location of their arrest.
 
 ## Research question
 
@@ -92,8 +90,7 @@ glimpse(students_temp_housing)
 #| label: load-data-2
 
 library(readxl)
-durham_arrests <- read_excel(
-  "dpd_incidents_(ucr_nibrs_reporting).xlsx")
+durham_arrests <- read_excel("dpd_arrests_(ucr_nibrs_reporting).xlsx")
 glimpse(durham_arrests)
 ```
 

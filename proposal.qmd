@@ -32,8 +32,8 @@ Did students who attend public schools experience different types of housing ins
 
 My hypothesis is that students who attended a public school during the 2020-21 school year had a higher likelihood of experiencing housing instability than their privately-educated peers.
 
-<<<<<<< HEAD
-=======
+HEAD
+
 I also hypothesize that students who are educated at private schools were more likely to experience doubling up housing insecurity rather than living in shelters. On the other hand, I hypothesize that students educated at public schools experienced living in shelters as a a form of housing instability at a higher rate than those who were educated in private schools.
 
 There are both quantitative and categorical variables in my research question:
@@ -42,7 +42,7 @@ The categorical variable for our first research question is type of education (p
 
 The categorical variable for our second research question is type of education (private or public), and the quantitative variables for our second research question are \# of students residing in shelter and \# doubled up.
 
->>>>>>> 04f170c09e65e34bd4233f58167653f7073f5d08
+04f170c09e65e34bd4233f58167653f7073f5d08
 ## Literature
 
 The New York Times article, published on October 26th, 2022, explores the challenges faced by homeless students in New York City's public schools. According to the article, there are over 111,000 homeless students enrolled in the city's public schools, a number that has swelled from roughly 78,000 a decade ago. Closson writes about the circumstances that the students face, including inadequate housing, lack of access to food and medical care, and high levels of stress and trauma. It is a huge challenge to provide support and resources to these students, given limited funding. Despite this, the article also highlights positive efforts being made like "Bridging the Gap," a program that aims to provide academic and emotional support to homeless students. Overall, it paints a complex picture of difficult challenges faced by homeless students in NYC; while there are significant obstacles, there are also efforts underway to make real, tangible change.
@@ -118,6 +118,7 @@ Each observation is based on an airport code (shorthand for the airport's full n
 -   A description of the research topic along with a concise statement of your hypotheses on this topic.
 
 -   Identify the types of variables in your research question. Categorical? Quantitative?
+The variablres used are categorical and quantitative.
 
 ## Literature
 

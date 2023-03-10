@@ -44,7 +44,7 @@ The categorical variable for our second research question is type of education (
 
 The New York Times article, published on October 26th, 2022, explores the challenges faced by homeless students in New York City's public schools. According to the article, there are over 111,000 homeless students enrolled in the city's public schools, a number that has swelled from roughly 78,000 a decade ago. Closson writes about the circumstances that the students face, including inadequate housing, lack of access to food and medical care, and high levels of stress and trauma. It is a huge challenge to provide support and resources to these students, given limited funding. Despite this, the article also highlights positive efforts being made like "Bridging the Gap," a program that aims to provide academic and emotional support to homeless students. Overall, it paints a complex picture of difficult challenges faced by homeless students in NYC; while there are significant obstacles, there are also efforts underway to make real, tangible change.
 
-The article expands on our leading question of the correlation between public schools and housing insecurity. It details the homeless crisis up close and also provides statistics such as the graduation rate of highschool students living in shelters (60%).
+The article expands on our leading question of the correlation between public schools and housing insecurity. It details the homeless crisis up close and also provides statistics such as the graduation rate of highschool students living in shelters (60%). However, there is a focus on public schools. We hope to expand on these findings be exploring the differences between students with housing insecurity in public schools in comparison to those who attend private schools. Further, looking at data directly from 2021 - 2022, we are exploring the state of child homelessness and instability, something that was potentially exacerbated by the COVID-19 pandemic and economic struggles.
 
 Closson, Troy. "More than 104,000 New York City Students Were Homeless Last Year." The New York Times, The New York Times, 26 Oct. 2022, https://www.nytimes.com/2022/10/26/nyregion/nyc-homeless-students.html?smid=tw-nytimes&smtyp=cur.
 
@@ -80,11 +80,11 @@ For this question, most of the variables will be categorical. We are specificall
 
 ## Literature
 
--   Find one published credible article on the topic you are interested in researching.
+In April 2018, a U.S.-based group known as The Sentencing Project wrote a "Report to the United Nations on Racial Disparities in the U.S. Criminal Justice System" discussing the tremendous race-based inequities in arrests, treatment of suspects, convictions and sentencing. They emphasize such discrimination through startling statistics including the fact that African Americans are 5.9 times as likely to be incarcerated than Whites and are far more likely to be both arrested and convicted. Explaining the root cause of such inequities, The Sentencing Project states that "the experiences of the poor and minority defendants within the criminal justice system often differ substantially from that model due to a number of factors, each of which contributes to the over-representation of such individuals in the system."
 
--   Provide a one paragraph summary about the article.
+We look to expand off of this report, looking into how the type of arrest itself can also be biased against certain races. In integrating sex into this question, we are also further exploring the relationship between race and sex and how it influences discrimination within the criminal justice system.
 
--   In 1-2 sentences, explain how your research question builds on / is different than the article you have cited.
+The Sentencing Project. "Report to the United Nations on Racial Disparities in the U.S. Criminal Justice System." The Sentencing Project, 19 Apr. 2018, https://www.sentencingproject.org/reports/report-to-the-united-nations-on-racial-disparities-in-the-u-s-criminal-justice-system/
 
 ## Glimpse of data
 
@@ -120,7 +120,7 @@ We are utilizing mostly quantitative variables in this research, which the excep
 
 Published on July 1st, 2022, the NYT article "Understanding the Summer Air Travel Mess" discusses the challenges faced by travelers during the summer months due to mass delays and cancellations. As a result of being the busiest time of the year, factors such as weather, staffing shortages, and equipment issues have a much more significant impact on schedule disruption. Just last year, low-cost carriers like JetBlue and Spirit canceled 10.3 and 9 percent of flights in April. The article also provides advice on how to minimize the impact of flight delays: book direct flights and choose early morning departures. It's also smart to avoid flying during weekends. Most importantly, though, "never book the last flight of the day." Additionally, Murphy writes about the implications these cancellations have on airlines, damaging them both financially and reputation wise. New technologies may be implemented, but, at "the heart of the issue," airlines respond to supply and demand, increasing flights when people travel more.
 
-The NYT article offers a deeper glimpse into why certain times of the year result in more delays and cancellations. It also provides insight into factors such as departure time and flight (direct) routes.
+The NYT article offers a deeper glimpse into why certain times of the year result in more delays and cancellations. It also provides insight into factors such as departure time and flight (direct) routes. However, our research is slightly different from this article as it is based more recently and illustrates the impact of the pandemic. We hope to more explore how flight plans are adapted or cancelled at different times of year on a typically basis.
 
 Murphy, Heather. "Understanding the Summer Air Travel Mess." The New York Times, The New York Times, 1 July 2022, https://www.nytimes.com/2022/07/01/travel/summer-travel-flight-delays-cancellations.html.
 

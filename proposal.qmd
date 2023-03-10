@@ -88,6 +88,8 @@ glimpse(durham_arrests)
 
 ## Introduction and data
 
+[CORGIS Datasets Project (vt.edu)](https://think.cs.vt.edu/corgis/csv/airlines/)
+
 -   Identify the source of the data.
 
 -   State when and how it was originally collected (by the original data curator, not necessarily how you found the data).
@@ -115,5 +117,5 @@ glimpse(durham_arrests)
 ```{r}
 #| label: load-data-3
 
-# add code here
+glimpse(airlines)
 ```

@@ -53,7 +53,8 @@ Closson, Troy. "More than 104,000 New York City Students Were Homeless Last Year
 ```{r}
 #| label: load-data-1
 
-students_temp_housing <- read_csv("2021_Students_In_Temporary_Housing.csv")
+students_temp_housing <- read_csv("2021_Students_In_Temporary_Housing.csv", 
+                                  show_col_types = FALSE)
 glimpse(students_temp_housing)
 ```
 

@@ -32,8 +32,6 @@ Did students who attend public schools experience different types of housing ins
 
 My hypothesis is that students who attended a public school during the 2020-21 school year had a higher likelihood of experiencing housing instability than their privately-educated peers.
 
-HEAD
-
 I also hypothesize that students who are educated at private schools were more likely to experience doubling up housing insecurity rather than living in shelters. On the other hand, I hypothesize that students educated at public schools experienced living in shelters as a a form of housing instability at a higher rate than those who were educated in private schools.
 
 There are both quantitative and categorical variables in my research question:
@@ -42,14 +40,13 @@ The categorical variable for our first research question is type of education (p
 
 The categorical variable for our second research question is type of education (private or public), and the quantitative variables for our second research question are \# of students residing in shelter and \# doubled up.
 
-04f170c09e65e34bd4233f58167653f7073f5d08
 ## Literature
 
 The New York Times article, published on October 26th, 2022, explores the challenges faced by homeless students in New York City's public schools. According to the article, there are over 111,000 homeless students enrolled in the city's public schools, a number that has swelled from roughly 78,000 a decade ago. Closson writes about the circumstances that the students face, including inadequate housing, lack of access to food and medical care, and high levels of stress and trauma. It is a huge challenge to provide support and resources to these students, given limited funding. Despite this, the article also highlights positive efforts being made like "Bridging the Gap," a program that aims to provide academic and emotional support to homeless students. Overall, it paints a complex picture of difficult challenges faced by homeless students in NYC; while there are significant obstacles, there are also efforts underway to make real, tangible change.
 
 The article expands on our leading question of the correlation between public schools and housing insecurity. It details the homeless crisis up close and also provides statistics such as the graduation rate of highschool students living in shelters (60%).
 
-Closson, Troy. “More than 104,000 New York City Students Were Homeless Last Year.” The New York Times, The New York Times, 26 Oct. 2022, https://www.nytimes.com/2022/10/26/nyregion/nyc-homeless-students.html?smid=tw-nytimes&amp;smtyp=cur. 
+Closson, Troy. "More than 104,000 New York City Students Were Homeless Last Year." The New York Times, The New York Times, 26 Oct. 2022, https://www.nytimes.com/2022/10/26/nyregion/nyc-homeless-students.html?smid=tw-nytimes&smtyp=cur.
 
 ## Glimpse of data
 
@@ -117,16 +114,15 @@ Each observation is based on an airport code (shorthand for the airport's full n
 
 -   A description of the research topic along with a concise statement of your hypotheses on this topic.
 
--   Identify the types of variables in your research question. Categorical? Quantitative?
-The variablres used are categorical and quantitative.
+-   Identify the types of variables in your research question. Categorical? Quantitative? The variablres used are categorical and quantitative.
 
 ## Literature
 
-Published on July 1st, 2022, the NYT article "Understanding the Summer Air Travel Mess" discusses the challenges faced by travelers during the summer months due to mass delays and cancellations. As a result of being the busiest time of the year, factors such as weather, staffing shortages, and equipment issues have a much more significant impact on schedule disruption. Just last year, low-cost carriers like JetBlue and Spirit canceled 10.3 and 9 percent of flights in April. The article also provides advice on how to minimize the impact of flight delays: book direct flights and choose early morning departures. It's also smart to avoid flying during weekends. Most importantly, though, "never book the last flight of the day." Additionally, Murphy writes about the implications these cancellations have on airlines, damaging them both financially and reputation wise. New technologies may be implemented, but, at "the heart of the issue," airlines respond to supply and demand, increasing flights when people travel more. 
+Published on July 1st, 2022, the NYT article "Understanding the Summer Air Travel Mess" discusses the challenges faced by travelers during the summer months due to mass delays and cancellations. As a result of being the busiest time of the year, factors such as weather, staffing shortages, and equipment issues have a much more significant impact on schedule disruption. Just last year, low-cost carriers like JetBlue and Spirit canceled 10.3 and 9 percent of flights in April. The article also provides advice on how to minimize the impact of flight delays: book direct flights and choose early morning departures. It's also smart to avoid flying during weekends. Most importantly, though, "never book the last flight of the day." Additionally, Murphy writes about the implications these cancellations have on airlines, damaging them both financially and reputation wise. New technologies may be implemented, but, at "the heart of the issue," airlines respond to supply and demand, increasing flights when people travel more.
 
 The NYT article offers a deeper glimpse into why certain times of the year result in more delays and cancellations. It also provides insight into factors such as departure time and flight (direct) routes.
 
-Murphy, Heather. “Understanding the Summer Air Travel Mess.” The New York Times, The New York Times, 1 July 2022, https://www.nytimes.com/2022/07/01/travel/summer-travel-flight-delays-cancellations.html. 
+Murphy, Heather. "Understanding the Summer Air Travel Mess." The New York Times, The New York Times, 1 July 2022, https://www.nytimes.com/2022/07/01/travel/summer-travel-flight-delays-cancellations.html.
 
 ## Glimpse of data
 

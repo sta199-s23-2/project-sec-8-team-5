@@ -90,6 +90,9 @@ glimpse(students_temp_housing)
 ```{r}
 #| label: load-data-2
 
+library(readxl)
+durham_arrests <- read_excel(
+  "dpd_incidents_(ucr_nibrs_reporting).xlsx")
 glimpse(durham_arrests)
 ```
 
@@ -124,5 +127,6 @@ Each observation is based on an airport code (shorthand for the airport's full n
 ```{r}
 #| label: load-data-3
 
+airlines <- read_csv("airlines.csv", show_col_types = FALSE)
 glimpse(airlines)
 ```

@@ -16,6 +16,8 @@ library(tidyverse)
 
 ## Introduction and data
 
+[2021 Students In Temporary Housing - Catalog (data.gov)](https://catalog.data.gov/dataset/2021-students-in-temporary-housing)
+
 -   Identify the source of the data.
 
 -   State when and how it was originally collected (by the original data curator, not necessarily how you found the data).
@@ -49,6 +51,8 @@ library(tidyverse)
 # Data 2
 
 ## Introduction and data
+
+[DPD Arrests (UCR NIBRS Reporting) \| Durham, NC Open Data Portal (arcgis.com)](https://live-durhamnc.opendata.arcgis.com/documents/dpd-arrests-ucr-nibrs-reporting/about)
 
 -   Identify the source of the data.
 

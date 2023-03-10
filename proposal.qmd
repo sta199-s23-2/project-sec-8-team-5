@@ -24,11 +24,21 @@ Each observation is based on a DBN (District Borough Number) and a school's name
 
 ## Research question
 
--   A well formulated research question. (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)
+Does whether or not a student attended a public school during the 2020-2021 school year impact the likelihood of that student to be how likely that student was to experience housing instability during that year?
+
+Did students who attend public schools experience different types of housing instability than those who attend private schools during the 2020-21 school year?
 
 -   A description of the research topic along with a concise statement of your hypotheses on this topic.
 
--   Identify the types of variables in your research question. Categorical? Quantitative?
+My hypothesis is that students who attended a public school during the 2020-21 school year had a higher likelihood of experiencing housing instability than their privately-educated peers.
+
+I also hypothesize that students who are educated at private schools were more likely to experience doubling up housing insecurity rather than living in shelters. On the other hand, I hypothesize that students educated at public schools experienced living in shelters as a a form of housing instability at a higher rate than those who were educated in private schools.
+
+There are both quantitative and categorical variables in my research question:
+
+The categorical variable for our first research question is type of education (private or public), and the quantitative variable for our first research question is percent of students in temporary housing.
+
+The categorical variable for our second research question is type of education (private or public), and the quantitative variables for our second research question are \# of students residing in shelter and \# doubled up.
 
 ## Literature
 

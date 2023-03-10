@@ -1,5 +1,5 @@
 ---
-title: "Project title"
+title: "Team 05"
 subtitle: "Proposal"
 format: html
 editor: visual
@@ -16,39 +16,55 @@ library(tidyverse)
 
 ## Introduction and data
 
--   Identify the source of the data.
+[2021 Students In Temporary Housing - Catalog (data.gov)](https://catalog.data.gov/dataset/2021-students-in-temporary-housing)
 
--   State when and how it was originally collected (by the original data curator, not necessarily how you found the data).
+This data was collected from the Data.Gov Data Catalog. This data set was created on December 11, 2021, and the data was first published on December 6, 2021. The data is sourced from the City of New York. There is not much information concerning the specific method of collecting data; however, the data was collected for the New York City Department of Education, who likely used surveys to find out the relevant information about students who attended New York City district schools from the beginning of the school year to July 2 over the course of the 2020-2021 school year.
 
--   Write a brief description of the observations.
+Each observation is based on a DBN (District Borough Number) and a school's name. For each observation, there are different variables to identify the number of total students, the percentage of students in temporary housing, the number of students residing in shelter, the number of students residing in a DHS (Department of Homeless Services) shelter, the number of students residing in a non-DHS shelter, and the number of students living in "doubled up" housing, which means that they are living in households with multiple families due to the financial inability to live in their own home.
 
 ## Research question
 
--   A well formulated research question. (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)
+Does whether or not a student attended a public school during the 2020-2021 school year impact the likelihood of that student to be how likely that student was to experience housing instability during that year?
+
+Did students who attend public schools experience different types of housing instability than those who attend private schools during the 2020-21 school year?
 
 -   A description of the research topic along with a concise statement of your hypotheses on this topic.
 
--   Identify the types of variables in your research question. Categorical? Quantitative?
+My hypothesis is that students who attended a public school during the 2020-21 school year had a higher likelihood of experiencing housing instability than their privately-educated peers.
 
+<<<<<<< HEAD
+=======
+I also hypothesize that students who are educated at private schools were more likely to experience doubling up housing insecurity rather than living in shelters. On the other hand, I hypothesize that students educated at public schools experienced living in shelters as a a form of housing instability at a higher rate than those who were educated in private schools.
+
+There are both quantitative and categorical variables in my research question:
+
+The categorical variable for our first research question is type of education (private or public), and the quantitative variable for our first research question is percent of students in temporary housing.
+
+The categorical variable for our second research question is type of education (private or public), and the quantitative variables for our second research question are \# of students residing in shelter and \# doubled up.
+
+>>>>>>> 04f170c09e65e34bd4233f58167653f7073f5d08
 ## Literature
 
--   Find one published credible article on the topic you are interested in researching.
+The New York Times article, published on October 26th, 2022, explores the challenges faced by homeless students in New York City's public schools. According to the article, there are over 111,000 homeless students enrolled in the city's public schools, a number that has swelled from roughly 78,000 a decade ago. Closson writes about the circumstances that the students face, including inadequate housing, lack of access to food and medical care, and high levels of stress and trauma. It is a huge challenge to provide support and resources to these students, given limited funding. Despite this, the article also highlights positive efforts being made like "Bridging the Gap," a program that aims to provide academic and emotional support to homeless students. Overall, it paints a complex picture of difficult challenges faced by homeless students in NYC; while there are significant obstacles, there are also efforts underway to make real, tangible change.
 
--   Provide a one paragraph summary about the article.
+The article expands on our leading question of the correlation between public schools and housing insecurity. It details the homeless crisis up close and also provides statistics such as the graduation rate of highschool students living in shelters (60%).
 
--   In 1-2 sentences, explain how your research question builds on / is different than the article you have cited.
+Closson, Troy. “More than 104,000 New York City Students Were Homeless Last Year.” The New York Times, The New York Times, 26 Oct. 2022, https://www.nytimes.com/2022/10/26/nyregion/nyc-homeless-students.html?smid=tw-nytimes&amp;smtyp=cur. 
 
 ## Glimpse of data
 
 ```{r}
 #| label: load-data-1
 
-# add code here
+students_temp_housing <- read_csv("2021_Students_In_Temporary_Housing.csv")
+glimpse(students_temp_housing)
 ```
 
 # Data 2
 
 ## Introduction and data
+
+[DPD Arrests (UCR NIBRS Reporting) \| Durham, NC Open Data Portal (arcgis.com)](https://live-durhamnc.opendata.arcgis.com/documents/dpd-arrests-ucr-nibrs-reporting/about)
 
 -   Identify the source of the data.
 
@@ -77,22 +93,27 @@ library(tidyverse)
 ```{r}
 #| label: load-data-2
 
-# add code here
+library(readxl)
+durham_arrests <- read_excel(
+  "dpd_incidents_(ucr_nibrs_reporting).xlsx")
+glimpse(durham_arrests)
 ```
 
 # Data 3
 
 ## Introduction and data
 
--   Identify the source of the data.
+[CORGIS Datasets Project (vt.edu)](https://think.cs.vt.edu/corgis/csv/airlines/)
 
--   State when and how it was originally collected (by the original data curator, not necessarily how you found the data).
+This data is from the CORGIS Data Set Project. This is the second version of this data set, and it was created by Austin Cory Bart. The data set was created on March 27, 2015. There is little information on how the data was collected; however, it is likely that the statistician took a retrospective approach, looking at past monthly records for different airports across the United States starting in 2003.
 
--   Write a brief description of the observations.
+Each observation is based on an airport code (shorthand for the airport's full name) and a specific time (year/month). For each observation, there are different variables to identify how many flights were delayed (and for what reason), cancelled, diverted, or on time.
 
 ## Research question
 
 -   A well formulated research question. (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)
+
+1: relationship between flight delays and time of the year
 
 -   A description of the research topic along with a concise statement of your hypotheses on this topic.
 
@@ -100,16 +121,17 @@ library(tidyverse)
 
 ## Literature
 
--   Find one published credible article on the topic you are interested in researching.
+Published on July 1st, 2022, the NYT article "Understanding the Summer Air Travel Mess" discusses the challenges faced by travelers during the summer months due to mass delays and cancellations. As a result of being the busiest time of the year, factors such as weather, staffing shortages, and equipment issues have a much more significant impact on schedule disruption. Just last year, low-cost carriers like JetBlue and Spirit canceled 10.3 and 9 percent of flights in April. The article also provides advice on how to minimize the impact of flight delays: book direct flights and choose early morning departures. It's also smart to avoid flying during weekends. Most importantly, though, "never book the last flight of the day." Additionally, Murphy writes about the implications these cancellations have on airlines, damaging them both financially and reputation wise. New technologies may be implemented, but, at "the heart of the issue," airlines respond to supply and demand, increasing flights when people travel more. 
 
--   Provide a one paragraph summary about the article.
+The NYT article offers a deeper glimpse into why certain times of the year result in more delays and cancellations. It also provides insight into factors such as departure time and flight (direct) routes.
 
--   In 1-2 sentences, explain how your research question builds on / is different than the article you have cited.
+Murphy, Heather. “Understanding the Summer Air Travel Mess.” The New York Times, The New York Times, 1 July 2022, https://www.nytimes.com/2022/07/01/travel/summer-travel-flight-delays-cancellations.html. 
 
 ## Glimpse of data
 
 ```{r}
 #| label: load-data-3
 
-# add code here
+airlines <- read_csv("airlines.csv", show_col_types = FALSE)
+glimpse(airlines)
 ```

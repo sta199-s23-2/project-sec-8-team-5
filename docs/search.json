@@ -16,79 +16,79 @@
   {
     "objectID": "proposal.html",
     "href": "proposal.html",
-    "title": "Project title",
+    "title": "Team 05",
     "section": "",
-    "text": "library(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.2.2\n\n\nWarning: package 'tidyr' was built under R version 4.2.2\n\n\nWarning: package 'readr' was built under R version 4.2.2\n\n\nWarning: package 'purrr' was built under R version 4.2.2"
+    "text": "library(tidyverse)"
   },
   {
     "objectID": "proposal.html#introduction-and-data",
     "href": "proposal.html#introduction-and-data",
-    "title": "Project title",
+    "title": "Team 05",
     "section": "Introduction and data",
-    "text": "Introduction and data\n\nIdentify the source of the data.\nState when and how it was originally collected (by the original data curator, not necessarily how you found the data).\nWrite a brief description of the observations."
+    "text": "Introduction and data\n2021 Students In Temporary Housing - Catalog (data.gov)\nThis data was collected from the Data.Gov Data Catalog. This data set was created on December 11, 2021, and the data was first published on December 6, 2021. The data is sourced from the City of New York. There is not much information concerning the specific method of collecting data; however, the data was collected for the New York City Department of Education, who likely used surveys to find out the relevant information about students who attended New York City district schools from the beginning of the school year to July 2 over the course of the 2020-2021 school year.\nEach observation is based on a DBN (District Borough Number) and a school’s name. For each observation, there are different variables to identify the number of total students, the percentage of students in temporary housing, the number of students residing in shelter, the number of students residing in a DHS (Department of Homeless Services) shelter, the number of students residing in a non-DHS shelter, and the number of students living in “doubled up” housing, which means that they are living in households with multiple families due to the financial inability to live in their own home."
   },
   {
     "objectID": "proposal.html#research-question",
     "href": "proposal.html#research-question",
-    "title": "Project title",
+    "title": "Team 05",
     "section": "Research question",
-    "text": "Research question\n\nA well formulated research question. (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)\nA description of the research topic along with a concise statement of your hypotheses on this topic.\nIdentify the types of variables in your research question. Categorical? Quantitative?"
+    "text": "Research question\nDoes whether or not a student attended a public school during the 2020-2021 school year impact the likelihood of that student to be how likely that student was to experience housing instability during that year?\nDid students who attend public schools experience different types of housing instability than those who attend private schools during the 2020-21 school year?\n\nA description of the research topic along with a concise statement of your hypotheses on this topic.\n\nMy hypothesis is that students who attended a public school during the 2020-21 school year had a higher likelihood of experiencing housing instability than their privately-educated peers."
   },
   {
     "objectID": "proposal.html#literature",
     "href": "proposal.html#literature",
-    "title": "Project title",
+    "title": "Team 05",
     "section": "Literature",
     "text": "Literature\n\nFind one published credible article on the topic you are interested in researching.\nProvide a one paragraph summary about the article.\nIn 1-2 sentences, explain how your research question builds on / is different than the article you have cited."
   },
   {
     "objectID": "proposal.html#glimpse-of-data",
     "href": "proposal.html#glimpse-of-data",
-    "title": "Project title",
+    "title": "Team 05",
     "section": "Glimpse of data",
-    "text": "Glimpse of data\n\n# add code here"
+    "text": "Glimpse of data\n\nstudents_temp_housing <- read_csv(\"2021_Students_In_Temporary_Housing.csv\")\n\nRows: 1689 Columns: 9\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (8): DBN, School Name, # Students in Temporary Housing, % Students in Te...\ndbl (1): # Total Students\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\nglimpse(students_temp_housing)\n\nRows: 1,689\nColumns: 9\n$ DBN                               <chr> \"01M015\", \"01M019\", \"01M020\", \"01M03…\n$ `School Name`                     <chr> \"P.S. 015 Roberto Clemente\", \"P.S. 0…\n$ `# Total Students`                <dbl> 192, 212, 417, 284, 215, 229, 375, 2…\n$ `# Students in Temporary Housing` <chr> \"59\", \"24\", \"57\", \"61\", \"38\", \"43\", …\n$ `% Students in Temporary Housing` <chr> \"30.70%\", \"11.30%\", \"13.70%\", \"21.50…\n$ `# Students Residing in Shelter`  <chr> \"21\", \"14\", \"33\", \"37\", \"18\", \"15\", …\n$ `# Residing in DHS Shelter`       <chr> \"15\", \"s\", \"17\", \"22\", \"11\", \"s\", \"1…\n$ `# Residing in Non-DHS Shelter`   <chr> \"6\", \"s\", \"16\", \"15\", \"7\", \"s\", \"8\",…\n$ `# Doubled Up`                    <chr> \"36\", \"9\", \"18\", \"24\", \"18\", \"27\", \"…"
   },
   {
     "objectID": "proposal.html#introduction-and-data-1",
     "href": "proposal.html#introduction-and-data-1",
-    "title": "Project title",
+    "title": "Team 05",
     "section": "Introduction and data",
-    "text": "Introduction and data\n\nIdentify the source of the data.\nState when and how it was originally collected (by the original data curator, not necessarily how you found the data).\nWrite a brief description of the observations."
+    "text": "Introduction and data\nDPD Arrests (UCR NIBRS Reporting) | Durham, NC Open Data Portal (arcgis.com)\n\nIdentify the source of the data.\nState when and how it was originally collected (by the original data curator, not necessarily how you found the data).\nWrite a brief description of the observations."
   },
   {
     "objectID": "proposal.html#research-question-1",
     "href": "proposal.html#research-question-1",
-    "title": "Project title",
+    "title": "Team 05",
     "section": "Research question",
     "text": "Research question\n\nA well formulated research question. (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)\nA description of the research topic along with a concise statement of your hypotheses on this topic.\nIdentify the types of variables in your research question. Categorical? Quantitative?"
   },
   {
     "objectID": "proposal.html#literature-1",
     "href": "proposal.html#literature-1",
-    "title": "Project title",
+    "title": "Team 05",
     "section": "Literature",
-    "text": "Literature\n\nFind one published credible article on the topic you are interested in researching.\nProvide a one paragraph summary about the article.\nIn 1-2 sentences, explain how your research question builds on / is different than the article you have cited."
+    "text": "Literature\nPublished on July 1st, 2022, the NYT article “Understanding the Summer Air Travel Mess” discusses the challenges faced by travelers during the summer months due to mass delays and cancellations. As a result of being the busiest time of the year, factors such as weather, staffing shortages, and equipment issues have a much more significant impact on schedule disruption. Just last year, low-cost carriers like JetBlue and Spirit canceled 10.3 and 9 percent of flights in April. The article also provides advice on how to minimize the impact of flight delays: book direct flights and choose early morning departures. It’s also smart to avoid flying during weekends. Most importantly, though, “never book the last flight of the day.” Additionally, Murphy writes about the implications these cancellations have on airlines, damaging them both financially and reputation wise. New technologies may be implemented, but, at “the heart of the issue,” airlines respond to supply and demand, increasing flights when people travel more.\nThe NYT article offers a deeper glimpse into why certain times of the year result in more delays and cancellations. It also provides insight into factors such as departure time and flight (direct) routes.\nMurphy, Heather. “Understanding the Summer Air Travel Mess.” The New York Times, The New York Times, 1 July 2022, https://www.nytimes.com/2022/07/01/travel/summer-travel-flight-delays-cancellations.html."
   },
   {
     "objectID": "proposal.html#glimpse-of-data-1",
     "href": "proposal.html#glimpse-of-data-1",
-    "title": "Project title",
+    "title": "Team 05",
     "section": "Glimpse of data",
-    "text": "Glimpse of data\n\n# add code here"
+    "text": "Glimpse of data\n\nlibrary(readxl)\ndurham_arrests <- read_excel(\n  \"dpd_incidents_(ucr_nibrs_reporting).xlsx\")\nglimpse(durham_arrests)\n\nRows: 113,746\nColumns: 15\n$ `Case Number` <chr> \"01009687\", \"18009733\", \"18009733\", \"18011362\", \"1801470…\n$ `Report Date` <chr> \"1/1/2019\", \"10/18/2018\", \"10/18/2018\", \"11/19/2018\", \"2…\n$ `Report Time` <chr> \"12:01:00AM\", \"2:35:00PM\", \"2:35:00PM\", \"12:00:00PM\", \"5…\n$ Status        <chr> \"Inactive\", \"Inactive\", \"Inactive\", \"Cleared By Arrest\",…\n$ Sequence      <dbl> 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,…\n$ `ATT/COM`     <chr> \"COM\", \"COM\", \"COM\", \"COM\", \"COM\", \"COM\", \"COM\", \"COM\", …\n$ `UCR Code`    <chr> \"26F\", \"35A\", \"35B\", \"35A\", \"35A\", \"35A\", \"35A\", \"35B\", …\n$ Offense       <chr> \"FRAUD-IDENTITY THEFT\", \"DRUG/NARCOTIC VIOLATIONS\", \"DRU…\n$ Address       <chr> \"4400 EMERALD FOREST DR\", \"800 DUPREE ST\", \"800 DUPREE S…\n$ X             <dbl> 2027871, 2030971, 2031084, 2043296, 2033392, 2043287, 20…\n$ Y             <dbl> 784699.1, 810537.8, 810652.8, 816505.7, 833429.8, 816470…\n$ District      <chr> \"D4\", \"D4\", \"D4\", \"D1\", \"D2\", \"D1\", \"D3\", \"D3\", \"D2\", \"D…\n$ Beat          <chr> \"421\", \"411\", \"411\", \"123\", \"223\", \"123\", \"311\", \"311\", …\n$ Premise       <chr> \"Residence/Home\", \"Home Of Offender - Single Family\", \"H…\n$ Weapon        <chr> \"(blank)\", \"Not Applicable/None\", \"Not Applicable/None\",…"
   },
   {
     "objectID": "proposal.html#introduction-and-data-2",
     "href": "proposal.html#introduction-and-data-2",
-    "title": "Project title",
+    "title": "Team 05",
     "section": "Introduction and data",
-    "text": "Introduction and data\n\nIdentify the source of the data.\nState when and how it was originally collected (by the original data curator, not necessarily how you found the data).\nWrite a brief description of the observations."
+    "text": "Introduction and data\nCORGIS Datasets Project (vt.edu)\nThis data is from the CORGIS Data Set Project. This is the second version of this data set, and it was created by Austin Cory Bart. The data set was created on March 27, 2015. There is little information on how the data was collected; however, it is likely that the statistician took a retrospective approach, looking at past monthly records for different airports across the United States starting in 2003.\nEach observation is based on an airport code (shorthand for the airport’s full name) and a specific time (year/month). For each observation, there are different variables to identify how many flights were delayed (and for what reason), cancelled, diverted, or on time."
   },
   {
     "objectID": "proposal.html#research-question-2",
     "href": "proposal.html#research-question-2",
-    "title": "Project title",
+    "title": "Team 05",
     "section": "Research question",
-    "text": "Research question\n\nA well formulated research question. (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)\nA description of the research topic along with a concise statement of your hypotheses on this topic.\nIdentify the types of variables in your research question. Categorical? Quantitative?"
+    "text": "Research question\n\nA well formulated research question. (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)\n\n1: relationship between flight delays and time of the year\n\nA description of the research topic along with a concise statement of your hypotheses on this topic.\nIdentify the types of variables in your research question. Categorical? Quantitative?"
   },
   {
     "objectID": "proposal.html#literature-2",
@@ -100,9 +100,9 @@
   {
     "objectID": "proposal.html#glimpse-of-data-2",
     "href": "proposal.html#glimpse-of-data-2",
-    "title": "Project title",
+    "title": "Team 05",
     "section": "Glimpse of data",
-    "text": "Glimpse of data\n\n# add code here"
+    "text": "Glimpse of data\n\nairlines <- read_csv(\"airlines.csv\", show_col_types = FALSE)\nglimpse(airlines)\n\nRows: 4,408\nColumns: 24\n$ Airport.Code                                          <chr> \"ATL\", \"BOS\", \"B…\n$ Airport.Name                                          <chr> \"Atlanta, GA: Ha…\n$ Time.Label                                            <chr> \"2003/06\", \"2003…\n$ Time.Month                                            <dbl> 6, 6, 6, 6, 6, 6…\n$ `Time.Month Name`                                     <chr> \"June\", \"June\", …\n$ Time.Year                                             <dbl> 2003, 2003, 2003…\n$ `Statistics.# of Delays.Carrier`                      <dbl> 1009, 374, 296, …\n$ `Statistics.# of Delays.Late Aircraft`                <dbl> 1275, 495, 477, …\n$ `Statistics.# of Delays.National Aviation System`     <dbl> 3217, 685, 389, …\n$ `Statistics.# of Delays.Security`                     <dbl> 17, 3, 8, 2, 4, …\n$ `Statistics.# of Delays.Weather`                      <dbl> 328, 66, 78, 54,…\n$ Statistics.Carriers.Names                             <chr> \"American Airlin…\n$ Statistics.Carriers.Total                             <dbl> 11, 14, 11, 11, …\n$ Statistics.Flights.Cancelled                          <dbl> 216, 138, 29, 73…\n$ Statistics.Flights.Delayed                            <dbl> 5843, 1623, 1245…\n$ Statistics.Flights.Diverted                           <dbl> 27, 3, 15, 14, 1…\n$ `Statistics.Flights.On Time`                          <dbl> 23974, 7875, 699…\n$ Statistics.Flights.Total                              <dbl> 30060, 9639, 828…\n$ `Statistics.Minutes Delayed.Carrier`                  <dbl> 61606, 20319, 13…\n$ `Statistics.Minutes Delayed.Late Aircraft`            <dbl> 68335, 28189, 26…\n$ `Statistics.Minutes Delayed.National Aviation System` <dbl> 118831, 24400, 1…\n$ `Statistics.Minutes Delayed.Security`                 <dbl> 518, 99, 278, 12…\n$ `Statistics.Minutes Delayed.Total`                    <dbl> 268764, 77167, 6…\n$ `Statistics.Minutes Delayed.Weather`                  <dbl> 19474, 4160, 620…"
   },
   {
     "objectID": "report.html",

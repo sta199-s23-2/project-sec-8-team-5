@@ -1,6 +1,6 @@
 ---
 title: "The Statistics of Airlines"
-subtitle: "Report"
+subtitle: "Cancellations and Delays"
 format: html
 editor: visual
 execute:

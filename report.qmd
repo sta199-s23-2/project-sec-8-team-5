@@ -24,3 +24,5 @@ Flight delays and cancellations often give passengers grief and stress at all di
 Based on the past literature on the times of year flights are subject to the most cancellations and delays, we hypothesize that the time most prone to flight cancellations and delays is during the summer months (June through August).
 
 We are utilizing mostly quantitative variables in this research, which the exception of the month data, airline information, and airport information (categorical). Quantitative variables used will include the number of flights delayed and cancelled for a variety of reasons at different airports across the country.
+
+To supplement our results, we will also be investigating the effect of departure time and direct/connected flights on cancellations to find ways to help avoid the delay and grief of flight errors.

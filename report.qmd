@@ -1,5 +1,5 @@
 ---
-title: "Project title"
+title: "The Statistics of Airlines"
 subtitle: "Report"
 format: html
 editor: visual

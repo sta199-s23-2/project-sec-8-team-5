@@ -14,3 +14,13 @@ execute:
 This data is from the CORGIS Data Set Project. This is the second version of this data set, and it was created by Austin Cory Bart. The data set was created on March 27, 2015. There is little information on how the data was collected; however, it is likely that the statistician took a retrospective approach, looking at past monthly records for different airports across the United States starting in 2003.
 
 Each observation is based on an airport code (shorthand for the airport's full name) and a specific time (year/month). For each observation, there are different variables to identify how many flights were delayed (and for what reason), cancelled, diverted, or on time.
+
+## Research question
+
+At what times of year are there the most flight delays and cancelations, and what is the most common type of reasoning for delays and cancellations at these times?
+
+Flight delays and cancellations often give passengers grief and stress at all different times of the year. However, our question explores whether there is a specific time of year when flights are particularly prone to delays and cancellations. In turn, this would help those looking to fly to know how to best plan for trips that might be impacted by flight changes. Working to understand why such issues occur would also be crucial, both in determining whether certain cancellations or delays can be avoided and in providing some perspective to passengers who have struggled with flight plans in the past.
+
+Based on the past literature on the times of year flights are subject to the most cancellations and delays, we hypothesize that the time most prone to flight cancellations and delays is during the summer months (June through August).
+
+We are utilizing mostly quantitative variables in this research, which the exception of the month data, airline information, and airport information (categorical). Quantitative variables used will include the number of flights delayed and cancelled for a variety of reasons at different airports across the country.

@@ -7,4 +7,10 @@ execute:
   echo: true
 ---
 
-Add project writeup here.
+## Introduction and data
+
+[CORGIS Datasets Project (vt.edu)](https://think.cs.vt.edu/corgis/csv/airlines/)
+
+This data is from the CORGIS Data Set Project. This is the second version of this data set, and it was created by Austin Cory Bart. The data set was created on March 27, 2015. There is little information on how the data was collected; however, it is likely that the statistician took a retrospective approach, looking at past monthly records for different airports across the United States starting in 2003.
+
+Each observation is based on an airport code (shorthand for the airport's full name) and a specific time (year/month). For each observation, there are different variables to identify how many flights were delayed (and for what reason), cancelled, diverted, or on time.

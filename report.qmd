@@ -15,9 +15,7 @@ This data is from the CORGIS Data Set Project. This is the second version of thi
 
 Each observation is based on an airport code (shorthand for the airport's full name) and a specific time (year/month). For each observation, there are different variables to identify how many flights were delayed (and for what reason), cancelled, diverted, or on time.
 
-## Research question
-
-At what times of year are there the most flight delays and cancelations, and what is the most common type of reasoning for delays and cancellations at these times?
+Our research question is: Why do flight delays and cancellations occur at different times of the year?
 
 Flight delays and cancellations often give passengers grief and stress at all different times of the year. However, our question explores whether there is a specific time of year when flights are particularly prone to delays and cancellations. In turn, this would help those looking to fly to know how to best plan for trips that might be impacted by flight changes. Working to understand why such issues occur would also be crucial, both in determining whether certain cancellations or delays can be avoided and in providing some perspective to passengers who have struggled with flight plans in the past.
 

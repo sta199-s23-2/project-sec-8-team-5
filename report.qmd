@@ -17,7 +17,7 @@ Each observation is based on an airport code (shorthand for the airport's full n
 
 Our research question is: Why do flight delays and cancellations occur at different times of the year?
 
-Flight delays and cancellations often give passengers grief and stress at all different times of the year. However, our question explores whether there is a specific time of year when flights are particularly prone to delays and cancellations. In turn, this would help those looking to fly to know how to best plan for trips that might be impacted by flight changes. Working to understand why such issues occur would also be crucial, both in determining whether certain cancellations or delays can be avoided and in providing some perspective to passengers who have struggled with flight plans in the past.
+We want to answer this research question because flight delays and cancellations often give passengers grief and stress at all different times of the year. However, our question explores whether there is a specific time of year when flights are particularly prone to delays and cancellations. In turn, this would help those looking to fly to know how to best plan for trips that might be impacted by flight changes. Working to understand why such issues occur would also be crucial, both in determining whether certain cancellations or delays can be avoided and in providing some perspective to passengers who have struggled with flight plans in the past.
 
 Based on the past literature on the times of year flights are subject to the most cancellations and delays, we hypothesize that the time most prone to flight cancellations and delays is during the summer months (June through August).
 

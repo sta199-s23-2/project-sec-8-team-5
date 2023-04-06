@@ -11,11 +11,9 @@ execute:
 
 [CORGIS Datasets Project (vt.edu)](https://think.cs.vt.edu/corgis/csv/airlines/)
 
-This data is from the CORGIS Data Set Project. This is the second version of this data set, and it was created by Austin Cory Bart. The data set was created on March 27, 2015. There is little information on how the data was collected; however, it is likely that the statistician took a retrospective approach, looking at past monthly records for different airports across the United States starting in 2003.
+This data is from the CORGIS Data Set Project. This is the second version of this data set, and it was created by Austin Cory Bart. The data set was created on March 27, 2015. There is little information on how the data was collected; however, it is likely that the statistician took a retrospective approach, looking at past monthly records for different airports across the United States starting in 2003. Each observation is based on an airport code (shorthand for the airport's full name) and a specific time (year/month). For each observation, there are different variables to identify how many flights were delayed (and for what reason), cancelled, diverted, or on time.
 
-Each observation is based on an airport code (shorthand for the airport's full name) and a specific time (year/month). For each observation, there are different variables to identify how many flights were delayed (and for what reason), cancelled, diverted, or on time.
-
-Our research question is: Why do flight delays and cancellations occur at different times of the year?
+Based on this data set our research question is: **Why do flight delays and cancellations occur at different times of the year?**
 
 We want to answer this research question because flight delays and cancellations often give passengers grief and stress at all different times of the year. However, our question explores whether there is a specific time of year when flights are particularly prone to delays and cancellations. In turn, this would help those looking to fly to know how to best plan for trips that might be impacted by flight changes. Working to understand why such issues occur would also be crucial, both in determining whether certain cancellations or delays can be avoided and in providing some perspective to passengers who have struggled with flight plans in the past.
 

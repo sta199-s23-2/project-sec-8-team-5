@@ -21,4 +21,32 @@ Published on July 1st, 2022, the NYT article "Understanding the Summer Air Trave
 
 Murphy, Heather. "Understanding the Summer Air Travel Mess." The New York Times, The New York Times, 1 July 2022, https://www.nytimes.com/2022/07/01/travel/summer-travel-flight-delays-cancellations.html.
 
+## Methodology
+
+```{r}
+#| label: load-pkgs
+#| message: false
+
+library(tidyverse)
+```
+
+```{r}
+#| label: load-data
+
+airlines <- read_csv("airlines.csv", show_col_types = FALSE)
+```
+
+```{r}
+#| label: add-season
+
+winter <- c(12, 1, 2)
+spring <- c(3, 4, 5)
+summer <- c(6, 7, 8)
+
+airlines_season <- airlines |>
+  mutate(season = if_else(Time.Month %in% winter, "Winter",
+                  if_else(Time.Month %in% spring,"Spring",
+                  if_else(Time.Month %in% summer, "Summer", "Fall"))))
+```
+
 We are utilizing mostly quantitative variables in this research, which the exception of the month data, airline information, and airport information (categorical). Quantitative variables used will include the number of flights delayed and cancelled for a variety of reasons at different airports across the country.

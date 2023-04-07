@@ -185,12 +185,19 @@ airlines_season |>
 ```{r}
 #| label: lin-reg-airport-code
 
-lm(Statistics.Flights.Delayed ~ season + Airport.Code, data = airlines_season) 
+linear_reg() |>
+  set_engine("lm") |>
+  fit(Statistics.Flights.Delayed ~ season + Airport.Code, data = airlines_season) |>
+  tidy()
 
 ```
 
 ```{r}
 #| label: lin-reg-airport-code-2
 
-lm(Statistics.Flights.Delayed ~ season * Airport.Code, data = airlines_season)
+linear_reg() |>
+  set_engine("lm") |>
+  fit(Statistics.Flights.Delayed ~ season * Airport.Code, data = airlines_season) |>
+  tidy()
+
 ```

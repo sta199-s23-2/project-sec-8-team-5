@@ -171,16 +171,14 @@ title = "Number of Flights Delayed by Season")
 
 ```
 ```{r}
-#| label: visualize-linear-reg-airport-code
+#| label: lin-reg-airport-code
 
-airlines_season |>
-ggplot(
-aes(x = season, y = Statistics.Flights.Delayed)) +
-geom_point() +
-geom_smooth(method = "lm", se = FALSE) +
-labs(x = "Season",
-y = "Number of Flights Delayed",
-title = "Number of Flights Delayed by Season")
+lm(Statistics.Flights.Delayed ~ season + Airport.Code, data = airlines_season) 
 
+```
+```{r}
+#| label: lin-reg-airport-code-2
+
+lm(Statistics.Flights.Delayed ~ season * Airport.Code, data = airlines_season)
 ```
 

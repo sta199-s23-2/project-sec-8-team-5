@@ -215,6 +215,7 @@ airlines_season |>
 linear_reg() |>
   set_engine("lm") |>
   fit(Statistics.Flights.Delayed ~ season * Airport.Code, data = airlines_season) |>
-  tidy()
+  tidy() 
 
 ```
+At the Atlanta airport in the fall, we expect there to be about 6021 dealayed flights. From this data, we can see the overall pattern of more flights being delayed in the summer because the coefficient for summer flights is much larger than that of the fall flights. 

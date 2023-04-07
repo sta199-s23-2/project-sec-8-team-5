@@ -158,9 +158,9 @@ airlines_season |>
 
 Examining this mean data, on average, the highest number of flight cancellations occur during the winter months while the highest number of flight delays occur during the summer months.
 
-## Results
+To answer our research question, we are using a linear regession model. A linear regression model is most appropriate for our data because we are utilizing a categorical variable (seasons) to help answer our research question. We will also utilize a multiple linear regression model to estimate the relationship between a quantitative variable (either the number of delays or the number of cancellations) and two explanatory variables (both seasons and airport codes). In this case, multiple linear regression is helpful because multiple variables are connected to the output (in this case, the number of flight delays or cancellations).
 
-To answer our research question, we are using a linear regession model. A linear regression model is most appropriate for our data because
+## Results
 
 ```{r}
 #| label: linear-reg-delayed

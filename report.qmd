@@ -147,5 +147,26 @@ airlines_season |>
 
 ## Results
 
+```{r}
+#| label: add-linear-reg
 
+linear_reg() |>
+  set_engine("lm") |>
+  fit(Statistics.Flights.Delayed ~ season, data = airlines_season) |>
+  tidy()
 
+```
+
+```{r}
+#| label: visualize-linear-reg
+
+airlines_season |>
+ggplot(
+aes(x = season, y = Statistics.Flights.Delayed)) +
+geom_point() +
+geom_smooth(method = "lm", se = FALSE) +
+labs(x = "Season",
+y = "Number of Flights Delayed",
+title = "Number of Flights Delayed by Season")
+
+```

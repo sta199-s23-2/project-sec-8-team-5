@@ -23,6 +23,8 @@ Murphy, Heather. "Understanding the Summer Air Travel Mess." The New York Times,
 
 ## Methodology
 
+We are utilizing mostly quantitative variables in this research, which the exception of the month data, airline information, and airport information (categorical). Quantitative variables used will include the number of flights delayed and cancelled for a variety of reasons at different airports across the country. 
+
 ```{r}
 #| label: load-pkgs
 #| message: false
@@ -141,4 +143,7 @@ airlines_season |>
             fall_mean_delay = mean(Statistics.Flights.Delayed))
 ```
 
-We are utilizing mostly quantitative variables in this research, which the exception of the month data, airline information, and airport information (categorical). Quantitative variables used will include the number of flights delayed and cancelled for a variety of reasons at different airports across the country.
+## Results
+
+
+

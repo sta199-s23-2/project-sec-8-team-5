@@ -187,7 +187,7 @@ airlines_season |>
 
 airlines_season |>
   ggplot(
-    aes(x = season, y = Statistics.Flights.Cancelled)) +
+    aes(x = season, y = Statistics.Flights.Cancelle)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE) +
   labs(x = "Season",
@@ -197,16 +197,6 @@ airlines_season |>
 
 ```{r}
 #| label: lin-reg-airport-code
-
-linear_reg() |>
-  set_engine("lm") |>
-  fit(Statistics.Flights.Delayed ~ season + Airport.Code, data = airlines_season) |>
-  tidy()
-
-```
-
-```{r}
-#| label: lin-reg-airport-code-2
 
 linear_reg() |>
   set_engine("lm") |>

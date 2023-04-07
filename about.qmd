@@ -8,8 +8,6 @@ This project was developed by **\[team name\]** For [STA 199: Introduction to Da
 
 -   Team member 1: One sentence description of Team member 1 (e.g., year, major, etc.).
 -   Team member 2: One sentence description of Team member 2 (e.g., year, major, etc.).
--   Team member 3: One sentence description of Team member 3 (e.g., year, major, etc.).
-  My name is Ethan Shang and I'm a freshman from Chapel Hill, NC majoring in Statistics and Economics.
--   Team member 4: One sentence description of Team member 4 (e.g., year, major, etc.).
-    -   My name is Angelina Sala and I'm a sophomore from Boulder, CO studying biology and global health on the premed track.
--   
+-   Team member 3: My name is Ethan Shang and I'm a freshman from Chapel Hill, NC majoring in Statistics and Economics.
+-   Team member 4: My name is Angelina Sala and I'm a sophomore from Boulder, CO studying biology and global health on the premed track.
+-   Team member 5: My name is Kristina Urberg and I'm a sophomore from Fort Wayne, IN studying French and psychology.

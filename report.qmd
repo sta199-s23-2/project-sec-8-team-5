@@ -169,7 +169,7 @@ linear_reg() |>
 ```
 
 ```{r}
-#| label: visualize-linear-reg
+#| label: visualize-linear-reg-delayed
 
 airlines_season |>
   ggplot(
@@ -180,6 +180,19 @@ airlines_season |>
        y = "Number of Flights Delayed",
        title = "Number of Flights Delayed by Season")
 
+```
+
+```{r}
+#| label: visualize-lin-reg-cancelled
+
+airlines_season |>
+  ggplot(
+    aes(x = season, y = Statistics.Flights.Cancelled)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(x = "Season",
+       y = "Number of Flights Delayed",
+       title = "Number of Flights Delayed by Season")
 ```
 
 ```{r}

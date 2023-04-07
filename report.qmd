@@ -201,12 +201,12 @@ airlines_season |>
 
 airlines_season |>
   ggplot(
-    aes(x = season, y = Statistics.Flights.Cancelle)) +
+    aes(x = season, y = Statistics.Flights.Cancelled)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE) +
   labs(x = "Season",
-       y = "Number of Flights Delayed",
-       title = "Number of Flights Delayed by Season")
+       y = "Number of Flights Canceled",
+       title = "Number of Flights Canceled by Season")
 ```
 
 ```{r}

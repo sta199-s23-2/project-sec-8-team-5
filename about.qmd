@@ -7,7 +7,7 @@ editor: visual
 This project was developed by **Team 5** For [STA 199: Introduction to Data Science](https://sta199-s23-2.github.io/) at Duke University. The team is comprised of the following team members.
 
 -   Team member 1: My name is Katie Kotler, and I'm a sophomore from Sammamish, WA studying public policy and global health with a minor in computer science.
--   Team member 2: One sentence description of Team member 2 (e.g., year, major, etc.).
+-   Team member 2: My name is Steven Peng, and I'm a freshman from Lake Oswego, OR majoring in CS and stats.
 -   Team member 3: My name is Ethan Shang and I'm a freshman from Chapel Hill, NC majoring in Statistics and Economics.
 -   Team member 4: My name is Angelina Sala and I'm a sophomore from Boulder, CO studying biology and global health on the premed track.
 -   Team member 5: My name is Kristina Urberg and I'm a sophomore from Fort Wayne, IN studying French and psychology.

@@ -158,7 +158,7 @@ airlines_season |>
 
 Examining this mean data, on average, the highest number of flight cancellations occur during the winter months while the highest number of flight delays occur during the summer months.
 
-To answer our research question, we are using a linear regession model. A linear regression model is most appropriate for our data because we are utilizing a categorical variable (seasons) to help answer our research question. We will also utilize a multiple linear regression model to estimate the relationship between a quantitative variable (either the number of delays or the number of cancellations) and two explanatory variables (both seasons and airport codes). In this case, multiple linear regression is helpful because multiple variables are connected to the output (in this case, the number of flight delays or cancellations).
+To answer our research question, we are using a linear regession model. A linear regression model is most appropriate for our data because we are utilizing a categorical variable (seasons) to help answer our research question. We will also utilize a multiple linear regression model to estimate the relationship between a quantitative variable (either the number of delays or the number of cancellations) and two explanatory variables (both seasons and airport codes). In this case, multiple linear regression is helpful because multiple variables are connected to the output (in this case, the number of flight delays or cancellations). Finally, we will utilize r-squared and AIC to determine whether the interactive models or the simple models are better fits for the data.
 
 ## Results
 
@@ -213,7 +213,7 @@ airlines_season |>
 ```
 
 ```{r}
-#| label: lin-reg-airport-code
+#| label: lin-reg-airport-delay
 
 model2_delayed <- linear_reg() |>
   set_engine("lm") |>
@@ -223,7 +223,20 @@ model2_delayed |>
   tidy()
 ```
 
-At the Atlanta airport in the fall, we expect there to be about 6021 delayed flights. From this data, we do notice that the season with the highest number of flight delays varies between airport. For Atlanta, we observe that the coefficient associated with the summer season is the highest, indicating that summer has the highest number of delays in Atlanta. However, it is important to note that not all five of the airports have the highest number of delays in the summer. For example, for Denver, the highest coefficient is associated with the winter season, indicating that the highest number of delays occurs during the winter season at the Denver airport.
+At the Atlanta airport in the fall, we expect there to be about 6021 delayed flights. From this data, we do notice that the season with the highest number of flight delays varies between airport. For Atlanta, we observe that the coefficient associated with the summer season is the highest, indicating that summer has the highest number of delays in Atlanta. However, it is important to note that not all five of the airports have the highest number of delays in the summer.
+
+```{r}
+#| label: lin-reg-airport-cancel
+
+model2_cancelled <- linear_reg() |>
+  set_engine("lm") |>
+  fit(Statistics.Flights.Cancelled ~ season * Airport.Code, data = airlines_season)
+
+model2_cancelled |>
+  tidy()
+```
+
+At the Atlanta airport in the fall, we expect there to be about 362 delayed flights. From this data, we do notice that the season with the highest number of flight cancellations varies between airport. For Atlanta, we observe that the coefficient associated with the winter season is the highest, indicating that winter has the highest number of cancellations in Atlanta. However, it is important to note that not all five of the airports have the highest number of cancellations in the winter.
 
 ```{r}
 #| label: comp-cancel-models
@@ -233,6 +246,16 @@ glance(model2_delayed)$r.squared
 
 glance(model1_delayed)$AIC
 glance(model2_delayed)$AIC
+
+glance(model1_cancelled)$r.squared
+glance(model2_cancelled)$r.squared
+
+glance(model1_cancelled)$AIC
+glance(model2_cancelled)$AIC
 ```
 
-Comparing the linear regression model without airport codes (model1) with the interactive regression model that takes airport codes as a second variable (model2), we observed that the interactive model is a better representation of the data than the simple model. The r-squared for the interactive model is closer to one than the simple model, and the AIC for the interactive model is smaller than the AIC for the simple model, both indicating that the second model, the interactive model, better represents this data. While our original question specifically focused on the impact of seasons on cancellations and delays, it is crucial to recognize that the airport also has a significant impact on cancellations and delays. Further research must be conducted to continue to examine the relationship between airports and cancellations or delays.
+Comparing the linear regression model without airport codes (model1) for flight delays with the interactive regression model that takes airport codes as a second variable (model2) for flight delays, we observed that the interactive model is a better representation of the data than the simple model. The r-squared for the interactive model is closer to one than the simple model, and the AIC for the interactive model is smaller than the AIC for the simple model, both indicating that the second model, the interactive model, better represents this data.
+
+We found the same results comparing the two models (the simple model and the interactive model) for the flight cancellation data. The r-squared for the interactive cancellation model is closer to one than the simple cancellation model, adn the AIC for the intractive cancellation model is lower than the AIC for the simple cancellation model.
+
+While our original question specifically focused on the impact of seasons on cancellations and delays, it is crucial to recognize that the airport also has a significant impact on cancellations and delays. Further research must be conducted to continue to examine the relationship between airports and cancellations or delays.

@@ -13,21 +13,11 @@ execute:
 
 Throughout this project, we have utilized the airplaines data set from the CORGIS Data Set Project. Created by Austin Cory Bart on March 27, 2015, this data set is the second version. There is little information on how the data was collected; however, it is likely that the statistician took a retrospective approach, examining monthly records for different airports across the United States starting in 2003. Each observation is based on an airport code (shorthand for the airport's full name) and a specific time (year/month). For each observation, there are different variables to identify how many flights were delayed (and for what reason), cancelled, diverted, or on time.
 
-Based on this data set our research question is: **Of the top five busiest airports in the U.S.,** **when and where are there the most flight delays and/or cancellations?** This research question was particularly intriguing to us because flight delays and cancellations often give passengers grief and stress. Our question explores whether there is a specific time of year when flights are particularly prone to delays and cancellations. In turn, this would help those looking to fly to know how to best plan for trips that might be impacted by flight changes.
+Based on this data set our research question is: **Of the top five busiest airports in the U.S.,** **when and where are there the most flight delays and/or cancellations?** This research question was particularly intriguing to us because flight delays and cancellations often give passengers grief and stress. Our question explores whether there is a specific time of year when flights are particularly prone to delays and cancellations. In turn, this would help those looking to fly to know how to best plan for trips that might be impacted by flight changes. In our research, we are utilizing both quantitative and categorical variables. Quantitative variables include the number of flights delayed and cancelled at different airports across the country. Categorical variables include month data and airport codes.
 
 **Based on our existing literature, we hypothesize that the time most prone to flight cancellations and delays is during the summer months (June through August), as so many people choose to fly during this time.**
 
 To answer this research question, certain data cleaning methods will be required. Currently, no "season" variable exists. Therefore, based on the month, create a new data set called **airlines_season** containing the **season** variable (based on the month variable in the initial data set). Since we are limiting our examination to the five busiest airports, we will also filter the data to only include ATL, LAX, ORD, DFW, and DEN. With this cleaned data set, we are able to conduct a statistical analysis to help us answer our research question.
-
-## Literature Review
-
-Published on July 1st, 2022, the New York Times article "Understanding the Summer Air Travel Mess" discusses the challenges faced by travelers during the summer months due to mass delays and cancellations. As airports are busier during this time of years, factors such as weather, staffing shortages, and equipment issues have a far more significant impact on flight scheduling. Just last year, low-cost carriers like JetBlue and Spirit canceled 10.3 and 9 percent of flights in April. The article also provides advice on how to minimize the impact of flight delays: book direct flights and choose early morning departures. It's also smart to avoid flying during weekends. Most importantly, though, "never book the last flight of the day." Additionally, Murphy discusses the negative impact of these cancellations on airline finances and reputation. Our question further adds to this initial research by comparing the NYT's prediction of increased delays and cancellations during the summer to statistical analysis of a data set. We are also specifically looking at the five busiest airports to do so.
-
-Murphy, Heather. "Understanding the Summer Air Travel Mess." The New York Times, The New York Times, 1 July 2022, https://www.nytimes.com/2022/07/01/travel/summer-travel-flight-delays-cancellations.html.
-
-## Methodology
-
-In our research, we are utilizing both quantitative and categorical variables. Quantitative variables include the number of flights delayed and cancelled at different airports across the country. Categorical variables include month data and airport codes.
 
 ```{r}
 #| label: load-pkgs
@@ -43,8 +33,6 @@ library(tidymodels)
 airlines <- read_csv("airlines.csv", show_col_types = FALSE)
 ```
 
-Our research question first requires us to create a new variable determining to help us determine when observations were recorded in term of season. The winter months include December, January, and February; the spring months include March, April, and May; the summer months include June, July, and August; and the fall months include September, October, and November. To create this new variable, we utilized the mutate() function and the if_else() function Swithin mutate().
-
 ```{r}
 #| label: add-season
 
@@ -58,8 +46,6 @@ airlines_season <- airlines |>
                   if_else(Time.Month %in% summer, "Summer", "Fall"))))
 ```
 
-Since we are focusing on the top five airports in the United States, we also wanted to filter out the data to only include observations for those five airports. These airports include Hartsfield-Jackson Atlanta International Airport (ATL), Dallas/Fort Worth International Airport (DFW), Denver International Airport (DEN), O'Hare International Airport (ORD), and Los Angeles International Airport (LAX).
-
 ```{r}
 #| label: filter-pop-airports
 
@@ -70,6 +56,14 @@ airlines_season <- airlines_season |>
          Airport.Code ==  "DFW" |
          Airport.Code == "DEN")
 ```
+
+## Literature Review
+
+Published on July 1st, 2022, the New York Times article "Understanding the Summer Air Travel Mess" discusses the challenges faced by travelers during the summer months due to mass delays and cancellations. As airports are busier during this time of years, factors such as weather, staffing shortages, and equipment issues have a far more significant impact on flight scheduling. Just last year, low-cost carriers like JetBlue and Spirit canceled 10.3 and 9 percent of flights in April. The article also provides advice on how to minimize the impact of flight delays: book direct flights and choose early morning departures. It's also smart to avoid flying during weekends. Most importantly, though, "never book the last flight of the day." Additionally, Murphy discusses the negative impact of these cancellations on airline finances and reputation. Our question further adds to this initial research by comparing the NYT's prediction of increased delays and cancellations during the summer to statistical analysis of a data set. We are also specifically looking at the five busiest airports to do so.
+
+Murphy, Heather. "Understanding the Summer Air Travel Mess." The New York Times, The New York Times, 1 July 2022, https://www.nytimes.com/2022/07/01/travel/summer-travel-flight-delays-cancellations.html.
+
+## Methodology
 
 To begin our exploratory data analysis, we created scatterplots using the facet_wrap() function to separate the data for each of the airports. The visualization below displays the number of flights cancelled at each of the top five busiest airports in the United States by season.
 
@@ -105,9 +99,9 @@ airlines_season |>
 
 ```
 
-Here, we observed that highest number of delays across the five airports occur either during the summer and winter months. ATL (Atlanta) had the highest number of delays of the five airports during the summer months while ORD (O'Hare) had the hightese number of delays during the winter months.
+Here, we observed that highest number of delays across the five airports occur either during the summer and winter months. ATL (Atlanta) had the highest number of delays of the five airports during the summer months while ORD (O'Hare) had the hightest number of delays during the winter months.
 
-While this above graphs do provide us with useful insight into what time of year has the highest number of delays and cancellations, we also wanted to utilize the summarize() function to calculate means.
+We also wanted utilized the summarize() function to calculate means.
 
 ```{r}
 #| label: airport-means
@@ -166,7 +160,7 @@ airlines_season |>
 
 According to this mean data, on average, the highest number of flight cancellations occur during the winter months while the highest number of flight delays occur during the summer months.
 
-To continue to explore our research question, we utilized linear regression modeling. A linear regression model is most appropriate for our data because we are utilizing a categorical variable (seasons) to help answer our research question. To determine the relationship between the number of cancellations and seasons and to determine the relationship between the number of delays and seasons, we will use a simple linear regression model. We will also utilize a multiple linear regression model to estimate the relationship between a quantitative variable (either the number of delays or the number of cancellations) and two explanatory variables (both seasons and airport codes). In this case, multiple linear regression is helpful because multiple variables are connected to the output (in this case, the number of flight delays or cancellations). Specifically, we will use an interactive linear regression model as the inclusion of the airport code variable impacts the relationship between the number of cancellations/delays and the season. Finally, we will utilize r-squared and AIC to determine whether the interactive models or the simple models are better fits for the data.
+To continue to explore our research question, we utilized linear regression modeling. A linear regression model is most appropriate as we are utilizing a categorical variable (seasons) to help answer our research question. To determine the relationship between the number of cancellations and seasons and to determine the relationship between the number of delays and seasons, we will use a simple linear regression model. We will also utilize an interactive multiple linear regression model to estimate the relationship between a quantitative variable (either the number of delays or the number of cancellations) and two explanatory variables (both seasons and airport codes). In this case, multiple linear regression is helpful because multiple variables are connected to the output (in this case, the number of flight delays or cancellations). Specifically, we will use an interactive linear regression model as the inclusion of the airport code variable impacts the relationship between the number of cancellations/delays and the season. Finally, we will utilize r-squared and AIC to determine whether the interactive models or the simple models are better fits for the data.
 
 ## Results
 

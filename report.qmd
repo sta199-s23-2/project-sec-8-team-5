@@ -23,7 +23,7 @@ Murphy, Heather. "Understanding the Summer Air Travel Mess." The New York Times,
 
 ## Methodology
 
-We are utilizing mostly quantitative variables in this research, which the exception of the month data, airline information, and airport information (categorical). Quantitative variables used will include the number of flights delayed and cancelled for a variety of reasons at different airports across the country.
+In our research, we are utilizing both quantitative and categorical variables. Quantitative variables include the number of flights delayed and cancelled at different airports across the country. Categorical variables include month data and airport codes.
 
 ```{r}
 #| label: load-pkgs
@@ -39,7 +39,7 @@ library(tidymodels)
 airlines <- read_csv("airlines.csv", show_col_types = FALSE)
 ```
 
-Our research question first requires us to create a new variable determining in what season observations were recorded. The winter months include December, January, and February; the spring months include March, April, and May; the summer months include June, July, and August; and the fall months include September, October, and November.
+Our research question first requires us to create a new variable determining to help us determine when observations were recorded in term of season. The winter months include December, January, and February; the spring months include March, April, and May; the summer months include June, July, and August; and the fall months include September, October, and November. To create this new variable, we utilized the mutate() function and the if_else() function Swithin mutate().
 
 ```{r}
 #| label: add-season
@@ -54,7 +54,7 @@ airlines_season <- airlines |>
                   if_else(Time.Month %in% summer, "Summer", "Fall"))))
 ```
 
-Since we are focusing on the top five airports in the United States, we also wanted to filter out the data to only include observations for those five airports.
+Since we are focusing on the top five airports in the United States, we also wanted to filter out the data to only include observations for those five airports. These airports include Hartsfield-Jackson Atlanta International Airport (ATL), Dallas/Fort Worth International Airport (DFW), Denver International Airport (DEN), O'Hare International Airport (ORD), and Los Angeles International Airport (LAX).
 
 ```{r}
 #| label: filter-pop-airports
@@ -67,7 +67,7 @@ airlines_season <- airlines_season |>
          Airport.Code == "DEN")
 ```
 
-This visualization below displays the flights cancelled at each of the top five busiest airports in the United States by season.
+To begin our exploratory data analysis, we created scatterplots using the facet_wrap() function to separate the data for each of the airports. The visualization below displays the number of flights cancelled at each of the top five busiest airports in the United States by season.
 
 ```{r}
 #| label: cancel-by-season
@@ -83,7 +83,9 @@ airlines_season |>
        title = "Flights Cancelled by Time of Year")
 ```
 
-This visualization below displays the flights delayed at each of the top five busiest airports in the United States by season.
+Examining this visualization, we noticed that almost all of the airports had the highest number of cancellations during the winter months. Of the five, ORD (O'Hare) had the most cancellations during the winter months. LAX (Los Angeles) was the only airport where the highest number of cancellations was not during the winter months.
+
+The visualization below displays the number of flights delayed at each of the top five busiest airports in the United States by season.
 
 ```{r}
 #| label: delay-by-season
@@ -99,7 +101,9 @@ airlines_season |>
 
 ```
 
-Looking at these visualizations, we noticed that almost all of the airports had the most cancellations during the winter months, with ORD (O'Hare) having the most cancellations during the winter months. Also, we observed that highest number of delays across the five airports occur during the summer and winter months, with ATL (Atlanta) having the most delays during the summer months and ORD (O'Hare) having the most delays during the winter months. However, we wanted to confirm such findings by looking at the mean number of delays and cancellations at each airport and during each season.
+Here, we observed that highest number of delays across the five airports occur either during the summer and winter months. ATL (Atlanta) had the highest number of delays of the five airports during the summer months while ORD (O'Hare) had the hightese number of delays during the winter months.
+
+While this above graphs do provide us with useful insight into what time of year has the highest number of delays and cancellations, we also wanted to utilize the summarize() function to calculate means.
 
 ```{r}
 #| label: airport-means
@@ -130,7 +134,7 @@ airlines_season |>
 
 ```
 
-Examining this mean data, on average, O'Hare has the highest number of flight cancellations and Atlanta has the highest number of flight delays.
+According to this mean data, on average, O'Hare has the highest number of flight cancellations while Atlanta has the highest number of flight delays.
 
 ```{r}
 #| label: season-means
@@ -156,9 +160,9 @@ airlines_season |>
             fall_mean_delay = mean(Statistics.Flights.Delayed))
 ```
 
-Examining this mean data, on average, the highest number of flight cancellations occur during the winter months while the highest number of flight delays occur during the summer months.
+According to this mean data, on average, the highest number of flight cancellations occur during the winter months while the highest number of flight delays occur during the summer months.
 
-To answer our research question, we are using a linear regession model. A linear regression model is most appropriate for our data because we are utilizing a categorical variable (seasons) to help answer our research question. We will also utilize a multiple linear regression model to estimate the relationship between a quantitative variable (either the number of delays or the number of cancellations) and two explanatory variables (both seasons and airport codes). In this case, multiple linear regression is helpful because multiple variables are connected to the output (in this case, the number of flight delays or cancellations). Finally, we will utilize r-squared and AIC to determine whether the interactive models or the simple models are better fits for the data.
+To continue to explore our research question, we utilized linear regression modeling. A linear regression model is most appropriate for our data because we are utilizing a categorical variable (seasons) to help answer our research question. To determine the relationship between the number of cancellations and seasons and to determine the relationship between the number of delays and seasons, we will use a simple linear regression model. We will also utilize a multiple linear regression model to estimate the relationship between a quantitative variable (either the number of delays or the number of cancellations) and two explanatory variables (both seasons and airport codes). In this case, multiple linear regression is helpful because multiple variables are connected to the output (in this case, the number of flight delays or cancellations). Specifically, we will use an interactive linear regression model as the inclusion of the airport code variable impacts the relationship between the number of cancellations/delays and the season. Finally, we will utilize r-squared and AIC to determine whether the interactive models or the simple models are better fits for the data.
 
 ## Results
 

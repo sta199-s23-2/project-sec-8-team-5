@@ -195,35 +195,6 @@ model1_cancelled |>
 
 Here, we observe that the mean number of cancellations that occur in the fall is approximately 316.45 (intercept). The coefficient associated with the winter season is most significant, indicating that the highest number of flight cancellations occur in the winter months across the five selected airports.
 
-The below visualizations illustrate the two simple linear regression models that demonstrate the relationship between the number of flight delays/cancellations and the season.
-
-```{r}
-#| label: visualize-linear-reg-delayed
-
-airlines_season |>
-  ggplot(
-    aes(x = season, y = Statistics.Flights.Delayed)) +
-  geom_point() +
-  geom_smooth(method = "lm", se = FALSE) +
-  labs(x = "Season",
-       y = "Number of Flights Delayed",
-       title = "Number of Flights Delayed by Season")
-
-```
-
-```{r}
-#| label: visualize-lin-reg-cancelled
-
-airlines_season |>
-  ggplot(
-    aes(x = season, y = Statistics.Flights.Cancelled)) +
-  geom_point() +
-  geom_smooth(method = "lm", se = FALSE) +
-  labs(x = "Season",
-       y = "Number of Flights Canceled",
-       title = "Number of Flights Canceled by Season")
-```
-
 We then created an interactive multiple linear regression model to illustrate the relationship between the number of flight delays, the season, and the airport code.
 
 ```{r}

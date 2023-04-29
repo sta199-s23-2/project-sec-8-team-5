@@ -249,7 +249,7 @@ ul.task-list li input[type="checkbox"] {
 4 seasonWinter    1251.      228.      5.49 5.49e-  8</code></pre>
 </div>
 </div>
-<p>In this case, we observe that the mean number of delays that occur in the fall is approximately 3988.68 (intercept). The coefficient associated with the summer season is both positive and most significant, indicating that the highest number of flight delays occur in the summer months across the five selected airports.</p>
+<p>In this case, we observe that the mean number of delays that occur in the fall at each airport is approximately 3988.68 (intercept). The coefficient associated with the summer season is both positive and most significant, indicating that the highest number of flight delays occur in the summer months across the five selected airports.</p>
 <p>We then created a simple linear regression model to determine the relationship between the number of flights cancelled and the season.</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
@@ -262,7 +262,7 @@ ul.task-list li input[type="checkbox"] {
 4 seasonWinter     445.      48.2      9.23 2.71e-19</code></pre>
 </div>
 </div>
-<p>Here, we observe that the mean number of cancellations that occur in the fall is approximately 316.45 (intercept). The coefficient associated with the winter season is most significant, indicating that the highest number of flight cancellations occur in the winter months across the five selected airports.</p>
+<p>Here, we observe that the mean number of cancellations that occur in the fall at each examined airport is approximately 316.45 (intercept). The coefficient associated with the winter season is most significant, indicating that the highest number of flight cancellations occur in the winter months across the five selected airports. This makes sense as the inclement weather (snowstorm, hail, etc.) increases the cancellations in winter, while vacationing and traveling frenzies push delays during the summer.</p>
 <p>We then created an interactive multiple linear regression model to illustrate the relationship between the number of flight delays, the season, and the airport code.</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
